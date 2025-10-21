@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #cdb4db, #a2d2ff);
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: #4f46e5;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar img {
+  width: 80px;       /* 👈 giảm kích thước ảnh */
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.sidebar h2 {
+  display: flex;
+  align-items: center;     /* căn giữa theo chiều dọc */
+  gap: 10px;               /* tạo khoảng cách giữa icon và chữ */
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.sidebar button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sidebar button:hover {
+  color: #ffd700;
+  transform: translateX(4px);
+}
+
+.sidebar button img.icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-right: 6px;
+  position: relative;
+  top: 8px;
+  
+}
+
+/* Content */
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;      /* căn giữa theo chiều dọc */
+  justify-content: center;  /* căn giữa theo chiều ngang */
+  background: linear-gradient(135deg, #dbeafe, #c7d2fe);
+  padding: 30px;
+}
+
+.tool {
+  display: none;
+}
+.active {
+  display: block;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 340px;
+}
+input, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+button {
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #3730a3;
+}
+.result {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+

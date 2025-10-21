@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genshin Utility Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>
+      <img src="img/paimon.png" alt="gear">
+      Genshin Tools
+    </h2>
+    <button onclick="showTool('resin')">
+    <img src="img\nhua.png" alt="icon" class="icon">
+    Tính Nhựa
+    </button>
+    <button onclick="showTool('coming')">✨ Sắp ra mắt...</button>
+  </div>
+
+  <!-- Main content -->
+  <div class="content">
+
+    <!-- Tool 1: Resin Calculator -->
+    <div id="resin" class="tool active">
+      <div class="card">
+        <h1>Tính Nhựa Genshin Impact</h1>
+        <label>Nhựa hiện tại:</label>
+        <input type="number" id="currentResin" placeholder="VD: 10">
+
+        <label>Thời gian hiện tại:</label>
+        <input type="datetime-local" id="currentTime">
+
+        <label>Thời gian cần tính tới:</label>
+        <input type="datetime-local" id="targetTime">
+
+        <button onclick="calculateResin()">Tính Nhựa</button>
+        <div class="result" id="result"></div>
+      </div>
+    </div>
+
+    <!-- Placeholder -->
+    <div id="coming" class="tool">
+      <h1>🚧 Tính năng khác sắp ra mắt...</h1>
+      <p>Đang phát triển: Countdown banner, Farm planner, Artifact XP,...</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
