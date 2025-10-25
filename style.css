@@ -86,6 +86,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   width: 340px;
+  max-width: 100%; /* 👈 thêm dòng này */
 }
 input, button {
   width: 100%;
@@ -114,4 +115,20 @@ button:hover {
   font-size: 22px;
   margin-bottom: 25px;
 }
+
+
+@media only screen and (max-width: 400px) {
+  .sidebar {
+    width: 100%;        /* sidebar thành top bar hoặc ẩn */
+    padding: 10px;
+  }
+  .content {
+    padding: 15px;
+  }
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
 
